@@ -18,11 +18,12 @@ services:
 
 Esto le indica a Docker que debe mapear el directorio interno de n8n donde se guardan todos los datos (`/home/node/.n8n`) a un volumen administrado por Docker llamado `n8n_storage`.
 
-El informe de estado (`docs/Estado_Actual_Proyecto.md`) también lo confirma:
+El informe de estado (`docs/Estado_Actual_Proyecto_V0.1.md`) también lo confirma:
 
-| Volumen                                     | Uso                      | Persistencia  |
-| ------------------------------------------- | ------------------------ | ------------- |
-| `self_hosted_n8n_starter_kit_n8n_storage` | Workflows y credenciales | ✅ Persistente |
+| Volumen       | Uso                      | Persistencia  |
+| ------------- | ------------------------ | ------------- |
+| `n8n_storage` | Workflows y credenciales | ✅ Persistente |
+> **Nota:** Docker Compose antepone el nombre del directorio del proyecto al nombre del volumen. Por lo tanto, al listar los volúmenes con `docker volume ls`, es posible que lo veas como `self_hosted_n8n_starter_kit_n8n_storage`.
 
 ## 2. ¿Dónde se encuentra físicamente ese volumen?
 
