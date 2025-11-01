@@ -1,0 +1,7 @@
+tunnel: 7bfbfd83-0866-4cef-9bc3-6650f2b55977
+credentials-file: C:\Users\fede\.cloudflared\7bfbfd83-0866-4cef-9bc3-6650f2b55977.json
+
+ingress:
+  - hostname: n8ntunnel.federicomosqueira.site
+    service: http://localhost:5678
+  - service: http_status:404
